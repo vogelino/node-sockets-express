@@ -11,4 +11,6 @@ app.get('/goodbye', routes.getGoodbye);
 app.get('/*', routes.notFound);
 
 
-app.listen(3000);
+var server = app.listen(3000, function() {
+	console.log('Express server started and listening on port: ' + server.address().port);
+});
