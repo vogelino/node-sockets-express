@@ -1,0 +1,6 @@
+node_modules
+dest
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+configi

@@ -1,0 +1,27 @@
+{
+  "name": "node-sockets-express",
+  "version": "1.0.0",
+  "description": "An easy setup with node.js, socket.io and express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vogelino/node-sockets-express.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "web",
+    "sockets",
+    "socket.io",
+    "http"
+  ],
+  "author": "vogelino",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/vogelino/node-sockets-express/issues"
+  },
+  "homepage": "https://github.com/vogelino/node-sockets-express#readme"
+}
