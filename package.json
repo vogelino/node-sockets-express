@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/vogelino/node-sockets-express/issues"
   },
-  "homepage": "https://github.com/vogelino/node-sockets-express#readme"
+  "homepage": "https://github.com/vogelino/node-sockets-express#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }

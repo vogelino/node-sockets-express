@@ -1,22 +1,14 @@
-var http = require('http');
+var express = require('express');
 var routes = require('./routes');
+var app = express();
 
-var server = http.createServer(function(request, response) {
-	switch(request.url) {
-		case '/':
-			routes.root.apply(routes.root, arguments);
-			break;
-		case '/goodbye':
-			if (request.method === 'POST') {
-				routes.postGoodbye.apply(routes.postGoodbye, arguments);
-			} else {
-				routes.getGoodbye.apply(routes.goodbye, arguments);
-			}
-			break;
-		default:
-			routes.notFound.apply(routes.notFound, arguments);
-			break;
-	}
-});
+var express = require('express');
+var app = express();
 
-server.listen(3000);
+app.get('/', routes.root);
+app.post('/goodbye', routes.postGoodbye);
+app.get('/goodbye', routes.getGoodbye);
+app.get('/*', routes.notFound);
+
+
+app.listen(3000);
